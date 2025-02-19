@@ -101,18 +101,12 @@ img {
   margin-top: 5%;
 }
 
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
-}
-
 @media (max-width: 28.75em) {
   .welcome-section {
     height: auto;
     padding: 2rem 1rem;
     text-align: center;
+    margin-top: 10rem; /* Adiciona espaçamento adicional */
   }
 
   .welcome-section h1 {
