@@ -102,20 +102,28 @@ img {
 
 @media (max-width: 28.75em) {
   .nav {
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-list {
-    margin: 0 1rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
   }
 
-  /* Ajustes para a barra de pesquisa em dispositivos móveis */
+  .nav-list a {
+    margin: 0.5rem 0;
+  }
+
   .search-container {
-    padding: 0.3rem; /* Reduzido para dispositivos móveis */
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   #search-bar {
-    width: 120px; /* Reduzido para dispositivos móveis */
+    width: calc(100% - 50px); /* Ajusta para ocupar o espaço disponível */
     font-size: 1.4rem; /* Reduzido para dispositivos móveis */
   }
 
@@ -152,7 +160,7 @@ img {
     height: auto;
     padding: 2rem 1rem;
     text-align: center;
-    margin-top: 6.5rem; /* Ajusta o espaçamento para um valor menor */
+    margin-top: 8rem; /* Ajusta o espaçamento para um valor menor */
     background-color: #000; /* Mantém a mesma cor de fundo */
     background-image: linear-gradient(62deg, #030303 0%, #181719 100%); /* Mantém o gradiente */
   }
