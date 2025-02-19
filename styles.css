@@ -53,7 +53,8 @@
   
   .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,6 +62,37 @@
     background: var(--main-red);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
+    padding: 1rem;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: var(--main-white);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  #search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    width: 200px;
+    border-radius: 4px;
+  }
+  
+  #search-button {
+    background: none;
+    border: none;
+    color: var(--main-gray);
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  #search-button:hover {
+    color: var(--main-blue);
   }
   
   .nav-list {
@@ -166,8 +198,22 @@
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding: 1.5rem;
-    text-align: left;
+    text-align: center;
     margin-top: -10px;
+  }
+  
+  .game-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .game-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
   }
   
   .game-title {
