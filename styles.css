@@ -160,8 +160,9 @@
     margin-top: 0rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffb703;
+    text-transform: uppercase;
   }
-  
+
   .game-description {
     font-size: 1.8rem;
     margin-top: 1rem;
