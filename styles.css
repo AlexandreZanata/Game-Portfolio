@@ -62,7 +62,7 @@ img {
   background: var(--main-red);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
-  padding: 0.5rem; /* Reduzido para ocupar menos espaço */
+  padding: 1rem;
 }
 
 .search-container {
@@ -70,15 +70,15 @@ img {
   align-items: center;
   background: var(--main-white);
   border-radius: 4px;
-  padding: 0.3rem; /* Reduzido para ocupar menos espaço */
+  padding: 0.5rem;
 }
 
 #search-bar {
   border: none;
   outline: none;
-  padding: 0.3rem; /* Reduzido para ocupar menos espaço */
-  font-size: 1.4rem; /* Reduzido para dispositivos móveis */
-  width: 100px; /* Reduzido para ocupar menos espaço */
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 200px;
   border-radius: 4px;
 }
 
@@ -86,9 +86,9 @@ img {
   background: none;
   border: none;
   color: var(--main-gray);
-  font-size: 1.4rem; /* Reduzido para dispositivos móveis */
+  font-size: 1.6rem;
   cursor: pointer;
-  margin-left: 0.3rem; /* Reduzido para ocupar menos espaço */
+  margin-left: 0.5rem;
 }
 
 #search-button:hover {
@@ -97,37 +97,38 @@ img {
 
 .nav-list {
   display: flex;
-  margin-right: 1rem; /* Reduzido para ocupar menos espaço */
+  margin-right: 2rem;
 }
 
 @media (max-width: 28.75em) {
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 0; /* Ajustado para ocupar menos espaço vertical */
+    justify-content: flex-start; /* Alinha a barra de pesquisa à esquerda */
   }
 
   .nav-list {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5rem; /* Ajustado para ocupar menos espaço */
-  }
-
-  .nav-list a {
-    margin: 0.2rem 0; /* Ajustado para ocupar menos espaço */
-    font-size: 1.8rem; /* Reduzido para caber melhor em telas menores */
-    padding: 0.5rem; /* Ajustado para ocupar menos espaço */
+    display: none; /* Oculta os links de navegação */
   }
 
   .search-container {
     width: 100%;
-    margin-bottom: 0.5rem; /* Ajustado para ocupar menos espaço */
+    margin-bottom: 1rem;
   }
 
   #search-bar {
-    width: calc(100% - 40px); /* Ajustado para ocupar o espaço disponível */
+    width: calc(100% - 50px); /* Ajusta para ocupar o espaço disponível */
+    font-size: 1.4rem; /* Reduzido para dispositivos móveis */
   }
+
+  #search-button {
+    font-size: 1.4rem; /* Reduzido para dispositivos móveis */
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 0.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-list a:hover {
