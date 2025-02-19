@@ -78,7 +78,7 @@
     outline: none;
     padding: 0.5rem;
     font-size: 1.6rem;
-    width: 200px;
+    width: 150px; /* Reduzido para dispositivos móveis */
     border-radius: 4px;
   }
   
@@ -107,6 +107,20 @@
   
     .nav-list {
       margin: 0 1rem;
+    }
+  
+    /* Ajustes para a barra de pesquisa em dispositivos móveis */
+    .search-container {
+      padding: 0.3rem; /* Reduzido para dispositivos móveis */
+    }
+  
+    #search-bar {
+      width: 120px; /* Reduzido para dispositivos móveis */
+      font-size: 1.4rem; /* Reduzido para dispositivos móveis */
+    }
+  
+    #search-button {
+      font-size: 1.4rem; /* Reduzido para dispositivos móveis */
     }
   }
   
