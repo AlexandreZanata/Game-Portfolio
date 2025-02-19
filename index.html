@@ -11,6 +11,10 @@
 </head>
 <body>
   <nav id="navbar" class="nav">
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Pesquisar...">
+      <button id="search-button"><i class="fas fa-search"></i></button>
+    </div>
     <ul class="nav-list">
       <li><a class="cor" href="#games">Jogos</a></li>
       <li><a class="cor" href="#contact">Contato</a></li>
@@ -25,22 +29,41 @@
   <section id="games" class="games-section">
     <h2 class="games-section-header">Meus Jogos</h2>
     <div class="games-grid">
+      <!-- Imagem da pasta "exemplos" -->
       <div class="game-card">
+        <div class="game-image-container">
+          <img src="exemplos/imagem1.jpg" alt="Jogo da Memória" class="game-image">
+        </div>
         <h3 class="game-title">Jogo da Memória</h3>
         <p class="game-description">Jogo da memória tema frutas.</p>
         <a href="https://jogo-da-memoria-opal-one.vercel.app/" class="btn game-link" target="_blank">Jogar Agora</a>
       </div>
+
+      <!-- Imagem da pasta "exemplos" -->
       <div class="game-card">
+        <div class="game-image-container">
+          <img src="exemplos/imagem2.jpg" alt="Jogo da Forca" class="game-image">
+        </div>
         <h3 class="game-title">Jogo da Forca</h3>
         <p class="game-description">Jogo da forca com tema Império Romano.</p>
         <a href="https://jogo-da-forca-imperio-romano.vercel.app/" class="btn game-link" target="_blank">Jogar Agora</a>
       </div>
+
+      <!-- Imagem da pasta "exemplos" -->
       <div class="game-card">
+        <div class="game-image-container">
+          <img src="exemplos/imagem3.jpg" alt="Jogo 2" class="game-image">
+        </div>
         <h3 class="game-title">Jogo 2</h3>
         <p class="game-description">Descrição breve do Jogo 2.</p>
         <a href="https://www.google.com/" class="btn game-link" target="_blank">Jogar Agora</a>
       </div>
+
+      <!-- Imagem da pasta "exemplos" -->
       <div class="game-card">
+        <div class="game-image-container">
+          <img src="exemplos/imagem4.jpg" alt="Jogo 2" class="game-image">
+        </div>
         <h3 class="game-title">Jogo 2</h3>
         <p class="game-description">Descrição breve do Jogo 2.</p>
         <a href="https://www.google.com/" class="btn game-link" target="_blank">Jogar Agora</a>
@@ -56,7 +79,6 @@
     <div class="contact-links">
       <a id="profile-link" href="https://github.com/AlexandreZanata" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
       <a id="profile-link" href="https://wa.me/556697227927" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Número de contato</a>
-
     </div>
   </section>
 
