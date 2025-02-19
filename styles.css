@@ -86,7 +86,7 @@
   }
   
   .nav-list a:hover {
-    background: #ffffe9;;
+    background: #ffffe9;
   }
   
   .welcome-section {
@@ -106,6 +106,24 @@
     font-weight: 200;
     font-style: italic;
     color: var(--main-red);
+  }
+  
+  @media (max-width: 28.75em) {
+    .welcome-section {
+      height: auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .welcome-section h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .welcome-section p {
+      font-size: 2rem;
+      font-weight: 300;
+    }
   }
   
   .games-section {
@@ -162,7 +180,7 @@
     color: #ffb703;
     text-transform: uppercase;
   }
-
+  
   .game-description {
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -255,3 +273,4 @@
       text-align: center;
     }
   }
+  
